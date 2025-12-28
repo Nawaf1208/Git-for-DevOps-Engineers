@@ -1,5 +1,9 @@
 # Git-for-DevOps-Engineers
 
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+
+![](Git.png)
+
 ## Git Basics
 
 **_1.How do you know if a certain directory is a git repository?_**
