@@ -6,47 +6,87 @@
 
 ## Git Basics
 
-**_1.How do you know if a certain directory is a git repository?_**
+<details>
+<summary><b><i>1.How do you know if a certain directory is a git repository?</i></b></summary>
 
-- You can check if there is a ".git" directory.
+$\color{green}{\text{Answer}}$
 
-**_2.Explain the following: `git directory`, `working directory` and `staging area`_**
+You can check if there is a ".git" directory.
 
-- The `Git directory` is where Git stores the meta-data and object database for your project. This is the most important part of Git, and it is what is copied when you clone a repository from another computer.
+</details>
 
-- The `working directory` is a single checkout of one version of the project. These files are pulled out of the compressed database in the Git directory and placed on disk for you to use or modify.
+<details>
+<summary><b><i>2.Explain the following: `git directory`, `working directory` and `staging area`</i></b></summary>
 
-- The `staging area` is a simple file, generally contained in your Git directory, that stores information about what will go into your next commit. It’s sometimes referred to as the index, but it’s becoming standard to refer to it as the staging area.
+$\color{green}{\text{Answer}}$
 
-**_3.What is the difference between `git pull` and `git fetch`?_**
+The `Git directory` is where Git stores the meta-data and object database for your project. This is the most important part of Git, and it is what is copied when you clone a repository from another computer.
 
-- Shortly, `git pull` = `git fetch` + `git merge`
+The `working directory` is a single checkout of one version of the project. These files are pulled out of the compressed database in the Git directory and placed on disk for you to use or modify.
 
-- When you run `git pull`, it gets all the changes from the remote or central repository and attaches it to your corresponding branch in your local repository.
+The `staging area` is a simple file, generally contained in your Git directory, that stores information about what will go into your next commit. It’s sometimes referred to as the index, but it’s becoming standard to refer to it as the staging area.
 
-- `git fetch` gets all the changes from the remote repository, stores the changes in a separate branch in your local repository
+</details>
 
-**_4.How to check if a file is tracked and if not, then track it?_**
+<details>
+<summary><b><i>3.What is the difference between `git pull` and `git fetch`?</i></b></summary>
 
-- There are different ways to check whether a file is tracked or not:
+$\color{green}{\text{Answer}}$
+
+Shortly, `git pull` = `git fetch` + `git merge`
+
+When you run `git pull`, it gets all the changes from the remote or central repository and attaches it to your corresponding branch in your local repository.
+
+`git fetch` gets all the changes from the remote repository, stores the changes in a separate branch in your local repository
+
+</details>
+
+<details>
+<summary><b><i>4.How to check if a file is tracked and if not, then track it?</i></b></summary>
+
+$\color{green}{\text{Answer}}$
+
+There are different ways to check whether a file is tracked or not:
   - `git ls-files <file>` -> exit code of 0 means it's tracked
   - `git blame <file> ...`
- 
-**_5.Explain what the file gitignore is used for_**
 
-- The purpose of gitignore files is to ensure that certain files not tracked by Git remain untracked. To stop tracking a file that is currently tracked, use `git rm --cached`.
+</details>
 
-**_6.How can you see which changes have done before committing them?_**
+<details>
+<summary><b><i>5.Explain what the file gitignore is used for</i></b></summary>
 
-- `git diff`
+$\color{green}{\text{Answer}}$
 
-**_7.What git status does?_**
+The purpose of gitignore files is to ensure that certain files not tracked by Git remain untracked. To stop tracking a file that is currently tracked, use `git rm --cached`.
 
-- `git status` helps you to understand the tracking status of files in your repository. Focusing on working directory and staging area - you can learn which changes were made in the working directory, which changes are in the staging area and in general, whether files are being tracked or not.
+</details>
 
-**_8.You've created new files in your repository. How to make sure Git tracks them?_**
+<details>
+<summary><b><i>6.How can you see which changes have done before committing them?</i></b></summary>
 
-- `git add FILES`
+$\color{green}{\text{Answer}}$
+
+`git diff`
+
+</details>
+
+<details>
+<summary><b><i>7.What git status does?</i></b></summary>
+
+$\color{green}{\text{Answer}}$
+
+`git status` helps you to understand the tracking status of files in your repository. Focusing on working directory and staging area - you can learn which changes were made in the working directory, which changes are in the staging area and in general, whether files are being tracked or not.
+
+</details>
+
+<details>
+<summary><b><i>8.You've created new files in your repository. How to make sure Git tracks them?</i></b></summary>
+
+$\color{green}{\text{Answer}}$
+
+`git add FILES`
+
+</details>
 
 ## Scenarios
 
