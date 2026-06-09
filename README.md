@@ -329,18 +329,34 @@ $\color{green}{\text{Answer}}$
 
 ## Git Diff
 
-**_35.What git diff does?_**
+<details>
+<summary><b><i>35.What git diff does?</i></b></summary>
 
-- `git diff` can compare between two commits, two files, a tree and the staging area, etc.
+$\color{green}{\text{Answer}}$
 
-**_36.Which one is faster? git diff-index HEAD or git diff HEAD_**
+`git diff` can compare between two commits, two files, a tree and the staging area, etc.
 
-- `git diff-index` is faster but to be fair, it's because it does less.
-- `git diff index` won't look at the content, only metadata like timestamps.
+</details>
 
-**_37.By which other Git commands does git diff used?_**
+<details>
+<summary><b><i>36.Which one is faster? git diff-index HEAD or git diff HEAD</i></b></summary>
 
-- The diff mechanism used by `git status` to perform a comparison and let the user know which files are being tracked
+$\color{green}{\text{Answer}}$
+
+`git diff-index` is faster but to be fair, it's because it does less.
+
+`git diff index` won't look at the content, only metadata like timestamps.
+
+</details>
+
+<details>
+<summary><b><i>37.By which other Git commands does git diff used?</i></b></summary>
+
+$\color{green}{\text{Answer}}$
+
+The diff mechanism used by `git status` to perform a comparison and let the user know which files are being tracked
+
+</details>
 
 ## Git Internal
 
