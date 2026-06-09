@@ -260,61 +260,123 @@ $\color{green}{\text{Answer}}$
 
 ## Rebase
 
-**_23.You would like to move forth commit to the top. How would you achieve that?_**
+<details>
+<summary><b><i>23.You would like to move forth commit to the top. How would you achieve that?</i></b></summary>
 
-- Using the `git rebase` command
+$\color{green}{\text{Answer}}$
 
-**_24.In what situations are you using `git rebase`?_**
+Using the `git rebase` command
 
-- Suppose a team is working on a `feature` branch that is coming from the `main` branch of the repo. At a point, where the feature development is done, and finally we wish to merge the feature branch into the main branch without keeping the history of the commits made in the feature branch, a `git rebase` will be helpful.
+</details>
 
-**_25.How do you revert a specific file to previous commit?_**
+<details>
+<summary><b><i>24.In what situations are you using `git rebase`?</i></b></summary>
 
-- `git checkout HEAD~1 -- /path/of/the/file`
+$\color{green}{\text{Answer}}$
 
-**_26.How to squash last two commits?_**
+Suppose a team is working on a `feature` branch that is coming from the `main` branch of the repo. At a point, where the feature development is done, and finally we wish to merge the feature branch into the main branch without keeping the history of the commits made in the feature branch, a `git rebase` will be helpful.
 
-- Interactive Rebase (Recommended)
-  - 1.Start an interactive rebase for the last two commits: `git rebase -i HEAD~2`
-  - 2.An editor will open with the commits listed (oldest first).
-  - 3.Change the `pick` command for the second commit (the most recent one) to `squash` (or s):
-    - `pick <commit-hash-1> Commit message 1`
-    - `squash <commit-hash-2> Commit message 2`
-  - 4.Save and close the editor.
-  - 5.Another editor will open to let you write the new, combined commit message.
-  - 6.Save and close this final editor.
- 
-**_27.What is the .git directory? What can you find there?_**
+</details>
 
-- The `.git` folder contains all the information that is necessary for your project in version control and all the information about commits, remote repository address, etc. All of them are present in this folder. It also contains a log that stores your commit history so that you can roll back to history.
+<details>
+<summary><b><i>25.How do you revert a specific file to previous commit?</i></b></summary>
 
-**_28.What are some Git anti-patterns? Things that you shouldn't do_**
+$\color{green}{\text{Answer}}$
 
-- Not waiting too long between commits
-- Not removing the .git directory
+`git checkout HEAD~1 -- /path/of/the/file`
 
-**_29.How do you remove a remote branch?_**
+</details>
 
-- You delete a remote branch with this syntax:
+<details>
+<summary><b><i>26.How to squash last two commits?</i></b></summary>
+
+$\color{green}{\text{Answer}}$
+
+Interactive Rebase (Recommended)
+
+1.Start an interactive rebase for the last two commits: `git rebase -i HEAD~2`
+
+2.An editor will open with the commits listed (oldest first).
+
+3.Change the `pick` command for the second commit (the most recent one) to `squash` (or s):
+  - `pick <commit-hash-1> Commit message 1`
+  - `squash <commit-hash-2> Commit message 2`
+
+4.Save and close the editor.
+
+5.Another editor will open to let you write the new, combined commit message.
+
+6.Save and close this final editor.
+
+</details>
+
+<details>
+<summary><b><i>27.What is the .git directory? What can you find there?</i></b></summary>
+
+$\color{green}{\text{Answer}}$
+
+The `.git` folder contains all the information that is necessary for your project in version control and all the information about commits, remote repository address, etc. All of them are present in this folder. It also contains a log that stores your commit history so that you can roll back to history.
+
+</details>
+
+<details>
+<summary><b><i>28.What are some Git anti-patterns? Things that you shouldn't do</i></b></summary>
+
+$\color{green}{\text{Answer}}$
+
+Not waiting too long between commits
+
+Not removing the .git directory
+
+</details>
+
+<details>
+<summary><b><i>29.How do you remove a remote branch?</i></b></summary>
+
+$\color{green}{\text{Answer}}$
+
+You delete a remote branch with this syntax:
   - `git push origin :[branch_name]`
 
-**_30.Are you familiar with gitattributes? When would you use it?_**
+</details>
 
-- gitattributes allow you to define attributes per pathname or path pattern.
+<details>
+<summary><b><i>30.Are you familiar with gitattributes? When would you use it?</i></b></summary>
 
-- You can use it for example to control endlines in files. In Windows and Unix based systems, you have different characters for new lines (\r\n and \n accordingly). So using gitattributes we can align it for both Windows and Unix with * text=auto in .gitattributes for anyone working with git. This is way, if you use the Git project in Windows you'll get \r\n and if you are using Unix or Linux, you'll get \n.
+$\color{green}{\text{Answer}}$
 
-**_31.How do you discard local file changes? (before commit)_**
+gitattributes allow you to define attributes per pathname or path pattern.
 
-- `git checkout -- <file_name>`
+You can use it for example to control endlines in files. In Windows and Unix based systems, you have different characters for new lines (\r\n and \n accordingly). So using gitattributes we can align it for both Windows and Unix with * text=auto in .gitattributes for anyone working with git. This is way, if you use the Git project in Windows you'll get \r\n and if you are using Unix or Linux, you'll get \n.
 
-**_32.How do you discard local commits?_**
+</details>
 
-- `git reset HEAD~1` for removing last commit If you would like to also discard the changes you `git reset --hard`
+<details>
+<summary><b><i>31.How do you discard local file changes? (before commit)</i></b></summary>
 
-**_33.True or False? To remove a file from git but not from the filesystem, one should use git rm_**
+$\color{green}{\text{Answer}}$
 
-- False. If you would like to keep a file on your filesystem, use `git reset   <file_name>`
+`git checkout -- <file_name>`
+
+</details>
+
+<details>
+<summary><b><i>32.How do you discard local commits?</i></b></summary>
+
+$\color{green}{\text{Answer}}$
+
+`git reset HEAD~1` for removing last commit If you would like to also discard the changes you `git reset --hard`
+
+</details>
+
+<details>
+<summary><b><i>33.True or False? To remove a file from git but not from the filesystem, one should use git rm</i></b></summary>
+
+$\color{green}{\text{Answer}}$
+
+False. If you would like to keep a file on your filesystem, use `git reset   <file_name>`
+
+</details>
 
 ## References
 
