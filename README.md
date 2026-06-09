@@ -318,9 +318,14 @@ $\color{green}{\text{Answer}}$
 
 ## References
 
-**_34.How to list the current git references in a given repository?_**
+<details>
+<summary><b><i>34.How to list the current git references in a given repository?</i></b></summary>
 
-- `find .git/refs/`
+$\color{green}{\text{Answer}}$
+
+`find .git/refs/`
+
+</details>
 
 ## Git Diff
 
