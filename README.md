@@ -197,39 +197,66 @@ True
 
 ## Merge
 
-**_18.You have two branches - main and devel. How do you merge devel into main?_**
+<details>
+<summary><b><i>18.You have two branches - main and devel. How do you merge devel into main?</i></b></summary>
 
-- `git checkout main`
-- `git merge devel`
-- `git push origin main`
+$\color{green}{\text{Answer}}$
 
-**_19.How to resolve git merge conflicts?_**
+```Git
+git checkout main
+git merge devel
+git push origin main
+```
 
-- First, you open the files which are in conflict and identify what are the conflicts. Next, based on what is accepted in your company or team, you either discuss with your colleagues on the conflicts or resolve them by yourself After resolving the conflicts, you add the files with `git add ` Finally, you run `git rebase --continue`
+</details>
 
-**_20.What merge strategies are you familiar with?_**
+<details>
+<summary><b><i>19.How to resolve git merge conflicts?</i></b></summary>
 
-- Fast-forward Merge: Used when the branch being merged is ahead of the target branch without any diverging commits. The target branch pointer is simply moved forward.
+$\color{green}{\text{Answer}}$
 
-- Recursive Merge: The default strategy used when merging two diverging branches. It creates a new merge commit.
+First, you open the files which are in conflict and identify what are the conflicts. Next, based on what is accepted in your company or team, you either discuss with your colleagues on the conflicts or resolve them by yourself After resolving the conflicts, you add the files with `git add ` Finally, you run `git rebase --continue`
 
-- Squash Merge: Combines all commits from the feature branch into a single new commit on the target branch. This cleans up history.
+</details>
 
-- Rebase: Not technically a merge strategy but an alternative workflow. It moves or combines a sequence of commits to a new base commit, creating a linear history.
+<details>
+<summary><b><i>20.What merge strategies are you familiar with?</i></b></summary>
 
-- Ours/Theirs: Used to favor one side's changes completely during a merge. 'Ours' discards the incoming changes, while 'Theirs' discards the current branch's changes
+$\color{green}{\text{Answer}}$
 
-**_21.Explain Git octopus merge_**
+1. Fast-forward Merge: Used when the branch being merged is ahead of the target branch without any diverging commits. The target branch pointer is simply moved forward.
 
-- Probably good to mention that it's:
+2. Recursive Merge: The default strategy used when merging two diverging branches. It creates a new merge commit.
+
+3. Squash Merge: Combines all commits from the feature branch into a single new commit on the target branch. This cleans up history.
+
+4. Rebase: Not technically a merge strategy but an alternative workflow. It moves or combines a sequence of commits to a new base commit, creating a linear history.
+
+5. Ours/Theirs: Used to favor one side's changes completely during a merge. 'Ours' discards the incoming changes, while 'Theirs' discards the current branch's changes
+
+</details>
+
+<details>
+<summary><b><i>21.Explain Git octopus merge</i></b></summary>
+
+$\color{green}{\text{Answer}}$
+
+Probably good to mention that it's:
   - It's good for cases of merging more than one branch (and also the default of such use cases)
   - It's primarily meant for bundling topic branches together
- 
-**_22.What is the difference between git reset and git revert?_**
 
-- `git revert` creates a new commit which undoes the changes from last commit.
+</details>
 
-- `git reset` depends on the usage, can modify the index or change the commit which the branch head is currently pointing at.
+<details>
+<summary><b><i>22.What is the difference between git reset and git revert?</i></b></summary>
+
+$\color{green}{\text{Answer}}$
+
+`git revert` creates a new commit which undoes the changes from last commit.
+
+`git reset` depends on the usage, can modify the index or change the commit which the branch head is currently pointing at.
+
+</details>
 
 ## Rebase
 
