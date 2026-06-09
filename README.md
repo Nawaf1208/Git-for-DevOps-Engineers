@@ -124,39 +124,76 @@ Finally, with certain build systems, you can know which files are being used/rel
 
 ## Branches
 
-**_11.What's is the branch strategy (flow) you know?_**
+<details>
+<summary><b><i>11.What's is the branch strategy (flow) you know?</i></b></summary>
+
+$\color{green}{\text{Answer}}$
 
 - Git flow
 - GitHub flow
 - Trunk based development
 - GitLab flow
 
-**_12.True or False? A branch is basically a simple pointer or reference to the head of certain line of work_**
+</details>
 
-- True
+<details>
+<summary><b><i>12.True or False? A branch is basically a simple pointer or reference to the head of certain line of work</i></b></summary>
 
-**_13.You have two branches - main and devel. How do you make sure devel is in sync with main?_**
+$\color{green}{\text{Answer}}$
 
-- `git checkout main`
-- `git pull`
-- `git checkout devel`
-- `git merge main`
+True
 
-**_14.Describe shortly what happens behind the scenes when you run git branch_**
+</details>
 
-- Git runs update-ref to add the SHA-1 of the last commit of the branch you're on into the new branch you would like to create
+<details>
+<summary><b><i>13.You have two branches - main and devel. How do you make sure devel is in sync with main?</i></b></summary>
 
-**_15.When you run `git branch` how does Git know the SHA-1 of the last commit?_**
+$\color{green}{\text{Answer}}$
 
-- Using the HEAD file: `.git/HEAD`
+```Git
+git checkout main
+git pull
+git checkout devel
+git merge main
+```
 
-**_16.What `unstaged` means in regards to Git?_**
+</details>
 
-- A file that is in the working directory but is not in the HEAD nor in the staging area is referred to as "unstaged".
+<details>
+<summary><b><i>14.Describe shortly what happens behind the scenes when you run git branch</i></b></summary>
 
-**_17.True or False? when you `git checkout some_branch`, Git updates .git/HEAD to `/refs/heads/some_branch`_**
+$\color{green}{\text{Answer}}$
 
-- True
+Git runs update-ref to add the SHA-1 of the last commit of the branch you're on into the new branch you would like to create
+
+</details>
+
+<details>
+<summary><b><i>15.When you run `git branch` how does Git know the SHA-1 of the last commit?</i></b></summary>
+
+$\color{green}{\text{Answer}}$
+
+Using the HEAD file: `.git/HEAD`
+
+</details>
+
+<details>
+<summary><b><i>16.What `unstaged` means in regards to Git?</i></b></summary>
+
+$\color{green}{\text{Answer}}$
+
+A file that is in the working directory but is not in the HEAD nor in the staging area is referred to as "unstaged".
+
+</details>
+
+<details>
+<summary><b><i>17.True or False? when you `git checkout some_branch`, Git updates .git/HEAD to `/refs/heads/some_branch`</i></b></summary>
+
+$\color{green}{\text{Answer}}$
+
+True
+
+</details>
 
 ## Merge
 
