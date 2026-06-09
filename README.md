@@ -360,20 +360,32 @@ The diff mechanism used by `git status` to perform a comparison and let the user
 
 ## Git Internal
 
-**_38.Describe how `git status` works_**
+<details>
+<summary><b><i>38.Describe how `git status` works</i></b></summary>
 
-- Shortly, it runs git diff twice:
-  - 1.Compare between HEAD to staging area
-  - 2.Compare staging area to working directory
+$\color{green}{\text{Answer}}$
+
+Shortly, it runs git diff twice:
+
+1.Compare between HEAD to staging area
+
+2.Compare staging area to working directory
+
+</details>
  
-**_39.If `git status` has to run diff on all the files in the HEAD commit to those in staging area/index and another one on staging area/index and working directory, how is it fairly fast?_**
+<details>
+<summary><b><i>39.If `git status` has to run diff on all the files in the HEAD commit to those in staging area/index and another one on staging area/index and working directory, how is it fairly fast?</i></b></summary>
 
-- One reason is about the structure of the index, commits, etc.
+$\color{green}{\text{Answer}}$
+
+One reason is about the structure of the index, commits, etc.
   - Every file in a commit is stored in tree object
   - The index is then a flattened structure of tree objects
   - All files in the index have pre-computed hashes
   - The diff operation then, is comparing the hashes
 
-- Another reason is caching
+Another reason is caching
   - Index caches information on working directory
   - When Git has the information for certain file cached, there is no need to look at the working directory file
+
+</details>
